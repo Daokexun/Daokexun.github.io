@@ -1,0 +1,93 @@
+# ================= 1. 需要你修改的个人信息 =================
+site_name: RealVirt 的笔记本
+site_author: RealVirt
+site_description: 我的大学学习与生活
+
+# 如果你以后把代码传到了Github，把下面两行的 # 号删掉，换成你的链接
+# repo_name: '你的Github用户名/你的仓库名'
+# repo_url: 'https://github.com/你的Github用户名/你的仓库名'
+
+copyright: Copyright &copy; 2024 RealVirt
+
+# ================= 2. 网站主题与功能配置 =================
+theme:
+  name: material
+  language: 'zh'
+  
+  font:
+    text: Noto Serif SC
+    code: JetBrains Mono
+  
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      toggle:
+          icon: material/weather-sunny
+          name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/weather-night
+        name: 切换到浅色模式
+        
+  features:
+    - navigation.tabs
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.follow
+    - content.code.copy
+
+# ================= 3. 页面底部的社交链接 =================
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Daokexun
+      name: 我的 GitHub
+
+
+# ================= 4. 你的网站目录 =================
+nav:
+  - 首页: index.md
+  - 生活记录: 
+    - 兴趣: interest.md
+    - 爱好: hobby.md
+  - 数学: math.md
+
+# ================= 5. Markdown 高级语法扩展 =================
+markdown_extensions:
+  - abbr
+  - admonition
+  - def_list
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      preserve_tabs: true
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+# ================= 6. 额外脚本（装上画笔，用于渲染数学公式） =================
+extra_javascript:
+  - https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js
