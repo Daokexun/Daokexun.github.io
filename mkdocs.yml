@@ -4,8 +4,8 @@ site_author: RealVirt
 site_description: 我的大学学习与生活
 
 # 如果你以后把代码传到了Github，把下面两行的 # 号删掉，换成你的链接
-# repo_name: '你的Github用户名/你的仓库名'
-# repo_url: 'https://github.com/你的Github用户名/你的仓库名'
+repo_name: 'Daokexun/Daokexun.github.io'
+repo_url: 'https://github.com/Daokexun/Daokexun.github.io'
 
 copyright: Copyright &copy; 2024 RealVirt
 
@@ -51,11 +51,97 @@ extra:
 
 # ================= 4. 你的网站目录 =================
 nav:
-  - 首页: index.md
-  - 生活记录: 
+  - Home:
+    - 首页: index.md
+    - 更新日志: changelog.md
+
+  - EE:
+    - 总览: ee/index.md
+    - 数学与物理基础:
+      - 数学总览: math.md
+      - 高等数学: ee/foundation/calculus.md
+      - 线性代数: ee/foundation/linear-algebra.md
+      - 概率统计: ee/foundation/probability.md
+      - 大学物理: ee/foundation/physics.md
+    - 电路与电子:
+      - 电路分析: ee/circuits/circuit-analysis.md
+      - 模拟电子技术: ee/circuits/analog-electronics.md
+      - 数字电子技术: ee/circuits/digital-electronics.md
+      - EDA 与仿真: ee/circuits/eda-simulation.md
+    - 信号与系统:
+      - 信号与系统: ee/signals/signals-and-systems.md
+      - 数字信号处理: ee/signals/dsp.md
+      - 信息论基础: ee/signals/information-theory.md
+    - 通信与网络:
+      - 通信原理: ee/comm/communication-principles.md
+      - 数字通信: ee/comm/digital-communication.md
+      - 无线通信: ee/comm/wireless.md
+      - 计算机网络: ee/comm/computer-network.md
+    - 嵌入式与硬件:
+      - C 与嵌入式基础: ee/embedded/c-embedded.md
+      - 单片机: ee/embedded/mcu.md
+      - FPGA 基础: ee/embedded/fpga.md
+      - 软硬协同: ee/embedded/hw-sw-co-design.md
+    - 实验与项目:
+      - 课程实验: ee/lab/course-labs.md
+      - 毕设记录: ee/lab/graduation-project.md
+      - 开源项目: ee/lab/open-source-projects.md
+
+  - AI:
+    - 总览: ai/index.md
+    - 机器学习:
+      - 监督学习: ai/ml/supervised.md
+      - 无监督学习: ai/ml/unsupervised.md
+    - 深度学习:
+      - 神经网络基础: ai/dl/nn-basics.md
+      - 计算机视觉: ai/dl/cv.md
+      - 大模型方向: ai/dl/llm.md
+    - 实践:
+      - 论文阅读: ai/practice/papers.md
+      - 项目复现: ai/practice/reproduce.md
+
+  - QKD:
+    - 总览: qkd/index.md
+    - 量子基础:
+      - 量子力学入门: qkd/foundation/qm.md
+      - 量子信息基础: qkd/foundation/qi.md
+    - 协议与安全:
+      - BB84: qkd/protocol/bb84.md
+      - Decoy State: qkd/protocol/decoy-state.md
+      - 安全性证明笔记: qkd/security/security-proof.md
+    - 工程实现:
+      - 系统架构: qkd/engineering/system.md
+      - 光学器件: qkd/engineering/optics.md
+      - 实验记录: qkd/engineering/lab-notes.md
+
+  - CS:
+    - 总览: cs/index.md
+    - 编程基础:
+      - Python: cs/programming/python.md
+      - C/C++: cs/programming/c-cpp.md
+      - 数据结构与算法: cs/programming/dsa.md
+    - 系统方向:
+      - 操作系统: cs/system/os.md
+      - 计算机组成: cs/system/co.md
+      - 数据库: cs/system/db.md
+
+  - Class:
+    - 总览: class/index.md
+    - 大一: class/year1/index.md
+    - 大二: class/year2/index.md
+    - 大三: class/year3/index.md
+    - 大四: class/year4/index.md
+    - 通识课: class/general/index.md
+
+  - Tools:
+    - 总览: tools/index.md
+    - 开发工具: tools/dev/index.md
+    - 学习工作流: tools/workflow/index.md
+    - 论文工具链: tools/research/index.md
+
+  - Interest:
     - 兴趣: interest.md
     - 爱好: hobby.md
-  - 数学: math.md
 
 # ================= 5. Markdown 高级语法扩展 =================
 markdown_extensions:
