@@ -127,11 +127,9 @@ nav:
 
   - Class:
     - 总览: class/index.md
-    - 大一: class/year1/index.md
-    - 大二: class/year2/index.md
-    - 大三: class/year3/index.md
-    - 大四: class/year4/index.md
-    - 通识课: class/general/index.md
+    - 科技简史: class/history-of-tech.md
+    - 专业学术制图: class/academic-plotting.md
+    - 面向应用的mathematica/matlab: class/application-math-tools.md
 
   - Tools:
     - 总览: tools/index.md
